@@ -1,0 +1,157 @@
+:root{
+    --cor-primaria:#ebfa0d;
+    --cor-secundaria:#d1c40cfe;
+    --cor-preta: rgba(0,0,0,0.8);
+    --cor-branca:white;
+}
+
+*{
+    padding:0;
+    margin:o;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial, sans-serif;
+    background-color: var(--cor-branca);
+    color: var(--cor-preta); 
+    height: 100vh; /* Define a altura do body para preencher a tela inteira */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    
+   
+}
+
+#container{
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid var(--cor-branca);
+    margin: auto; 
+    background-color: var(--cor-primaria);
+    box-shadow: 0 0 5px rgba(59, 57, 57, 0.94); /* Sombra */
+}
+
+#container-header{
+    background-color: var(--cor-secundaria);
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border:none;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#container-header h1{
+    /* padding:5px; */
+    margin: 20px;
+    font-size: 25px;
+    
+}
+
+#container-header form{
+    margin: 20px;
+}
+
+#input-button input{
+    padding:5px;
+    width: 200px;
+    margin-right:10px;
+}
+
+#input-button button{
+    padding:6px;
+    width: 80px;
+    color: var(--cor-branca);
+    background-color:var(--cor-preta);
+    font-weight: bold;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+#container-body{
+    display:grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
+    gap: 20px; /* Espaço entre as colunas */
+    margin:10px;
+}
+#container-body .label{
+    display:flex;
+    justify-content:end;
+    font-weight: bold;
+    margin-right: 40px;
+
+ }
+#container-body .input{
+   color:var(--cor-preta);
+   background-color:var(--cor-branca);
+   width: 200px;
+   border:none;
+   padding: 15px;
+}
+
+
+
+/* <style> */
+        /* Estilo básico da página */
+        /* body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container centralizado 
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo do título 
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo do formulário 
+        form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo do campo de entrada e botão 
+        input[type="text"] {
+            width: calc(100% - 110px);
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #5cb85c;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #4cae4c;
+        }
+
+        /* Estilo da seção de resultado 
+        .resultado {
+            text-align: center;
+        }
+
+        .resultado p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    </style> */
