@@ -19,6 +19,8 @@ body{
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
+
+    flex-direction:column;
     
    
 }
@@ -83,15 +85,34 @@ body{
     margin-right: 40px;
 
  }
-#container-body .input{
+#container-body input{
+
    color:var(--cor-preta);
    background-color:var(--cor-branca);
    width: 200px;
    border:none;
-   padding: 15px;
+   padding: 5px;
+}
+
+body p {
+    color:rgb(206, 59, 22);
+    font-weight: bold;
+    font-size:15px;
+    text-align: center;
 }
 
 
+
+/* #container #alinhar_mensagem{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    color:red;
+} */
 
 /* <style> */
         /* Estilo básico da página */
