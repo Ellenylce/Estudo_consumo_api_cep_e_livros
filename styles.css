@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 
-body{
+#body{
     font-family: arial, sans-serif;
     background-color: var(--cor-branca);
     color: var(--cor-preta); 
@@ -20,7 +20,7 @@ body{
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
 
-    flex-direction:column;
+    /* flex-direction:column; */
     
    
 }
@@ -94,7 +94,9 @@ body{
    padding: 5px;
 }
 
-body p {
+
+/* aqui tava body p ver se vai modificar o do cep */
+#body p {
     color:rgb(206, 59, 22);
     font-weight: bold;
     font-size:15px;
@@ -102,77 +104,96 @@ body p {
 }
 
 
-
-/* #container #alinhar_mensagem{
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-p{
-    color:red;
+/* ---- BIBLIOTECA ----- */
+/* #main{
+    padding:20px;
+    margin-left: 10px;
 } */
 
-/* <style> */
-        /* Estilo básico da página */
-        /* body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
+#body_biblioteca{
+    margin:0px;
+    padding:  0px;;
+}
+#header {
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgba(128, 0, 32, 0.8); 
+    padding: 20px;
+    color: white; 
+    margin-bottom: 20px;
+}
 
-        /* Container centralizado 
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+#form-busca{
+    display: flex;
+    align-items: center;
+} 
 
-        /* Estilo do título 
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+#campo_busca {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
 
-        /* Estilo do formulário 
-        form {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
+button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease; */
+}
 
-        /* Estilo do campo de entrada e botão 
-        input[type="text"] {
-            width: calc(100% - 110px);
-            padding: 10px;
-            margin-right: 10px;
-        }
+button:hover {
+    background-color: #ddd;
+} 
 
-        button {
-            padding: 10px;
-            background-color: #5cb85c;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
 
-        button:hover {
-            background-color: #4cae4c;
-        }
 
-        /* Estilo da seção de resultado 
-        .resultado {
-            text-align: center;
-        }
+/* -----outros codigos biublioteca */
 
-        .resultado p {
-            font-size: 18px;
-            margin: 10px 0;
-        }
-    </style> */
+/* Estilos CSS */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.livro {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.capa-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.capa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    /* object-fit: contain; */
+}
+.sem-capa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.info-livro {
+    text-align: left;
+}
+/* ... outros estilos CSS ... */
